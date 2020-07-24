@@ -1,5 +1,5 @@
 <h2 align="center">Introduction</h2>
-<div align="center">用于创建cyber系列项目的命令行工具s</div>
+<div align="center">用于创建cyber系列项目的命令行工具</div>
 <h2 align="center">Install</h2>
 
 ```bash
