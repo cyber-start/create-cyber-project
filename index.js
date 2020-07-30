@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 require("./utils/initial");
+const open = require("open");
 const selectTemplate = require("@/utils/selectTemplate");
 const inputPackageName = require("@/utils/inputPackageName");
 const downloadTemplate = require("@/utils/downloadTemplate");
@@ -11,6 +12,7 @@ const changeJsonFile = require("@/utils/changeJsonFile");
     const packageName = await inputPackageName();
     await downloadTemplate({ folderName: packageName, remote });
     await changeJsonFile({ folderName: packageName, projectName: packageName, devDependencies });
+    await open(`cd /${packageName}`);
   } catch (error) {
     throw error;
   }

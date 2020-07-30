@@ -14,7 +14,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "用于创建cyber系列项目的命令行工具",
   "dependencies": {
     "cli-spinners": "^2.4.0",
     "colors": "^1.4.0",
